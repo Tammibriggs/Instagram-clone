@@ -91,10 +91,10 @@ function Post({id, username, userImg, img, caption}) {
               : <HeartIcon onClick={likePost} className='btn'/>
             }
             
-            <ChatIcon className='btn'/>
-            <PaperAirplaneIcon className='btn'/>
+            <ChatIcon className='non-active-btn'/>
+            <PaperAirplaneIcon className='non-active-btn'/>
           </div>
-          <BookmarkIcon className='btn'/>
+          <BookmarkIcon className='non-active-btn'/>
         </div>
       )}
       

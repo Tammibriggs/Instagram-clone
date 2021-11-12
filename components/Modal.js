@@ -65,7 +65,7 @@ function Modal() {
         onClose={setOpen}
       >
         <div className='flex items-end justify-center min-h-[800px] 
-        sm:min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0'>
+        min-h-screen pt-4 px-4 pb-20 text-center items-center sm:block sm:p-0'>
           <Transition.Child
             as={Fragment}
             enter='ease-out duration-300'
@@ -110,7 +110,7 @@ function Modal() {
                 ): (
                   <div
                     onClick={() => filePickerRef.current.click()}
-                    className='mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100 cursor-pointer'
+                    className='mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100 cursor-pointer animate-pulse'
                   >
                     <CameraIcon 
                       className='h-6 w-6 text-red-600'
