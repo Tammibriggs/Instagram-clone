@@ -10,7 +10,7 @@ function Stories() {
 
   useEffect(() => {
    const suggestion = [...Array(20)].map((_, i) => (
-    {...faker.helpers.contextualCard(),
+    {...faker.helpers.createCard(),
       id: i,
     }
    ))
@@ -26,8 +26,8 @@ function Stories() {
           username={session?.user?.username}
         />
        )}
-      {suggestion.map(profile => (
-        <Story key={profile.id} img={profile.avatar} username={profile.username}/>
+      {suggestion.map((profile, i) => (
+        <Story key={profile.id} img={`https://picsum.photos/200/300?random=${i}`} username={profile.username}/>
       ))}
     </div>
   )

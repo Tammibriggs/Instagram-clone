@@ -23,14 +23,14 @@ function Suggestions() {
       </div>
 
       {
-        suggestions?.map((profile) => (
+        suggestions?.map((profile, i) => (
           <div 
             key={profile.id}
             className='flex items-center justify-between mt-3'
           >
             <img 
               className='w-10 h-10 rounded-full border p-[2px]'
-              src={profile.avatar}
+              src={`https://picsum.photos/200/300?random=${i}`}
               alt=''
             />
 
