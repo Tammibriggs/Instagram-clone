@@ -52,7 +52,6 @@ function Post({id, username, userImg, img, caption}) {
     }
   }
 
-
   // function to add comment
   const sendComment = async e => {
     e.preventDefault()
@@ -78,7 +77,7 @@ function Post({id, username, userImg, img, caption}) {
           className='rounded-full h-12 w-12 object-contain border p-1 mr-3'
         />
         <p className='flex-1 font-bold'>{username}</p>
-        <DotsHorizontalIcon className='h-5'/>
+        {/* <DotsHorizontalIcon className='h-5'/> */}
       </div>
 
       <img src={img} className='object-cover w-full' alt='post pic'/>
@@ -91,10 +90,10 @@ function Post({id, username, userImg, img, caption}) {
               : <HeartIcon onClick={likePost} className='btn'/>
             }
             
-            <ChatIcon className='non-active-btn'/>
-            <PaperAirplaneIcon className='non-active-btn'/>
+            {/* <ChatIcon className='non-active-btn'/> */}
+            {/* <PaperAirplaneIcon className='non-active-btn'/> */}
           </div>
-          <BookmarkIcon className='non-active-btn'/>
+          {/* <BookmarkIcon className='non-active-btn'/> */}
         </div>
       )}
       

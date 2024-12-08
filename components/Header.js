@@ -16,21 +16,9 @@ function Header() {
 
   return (
     <div className='shadow-sm border-b bg-white sticky top-0 z-50'>
-      <div className='flex justify-between max-w-6xl mx-5 lg:mx-auto py-5 lg:py-0'>
-        <div onClick={() => router.push('/')} className='relative hidden lg:inline-grid w-24 h-24 cursor-pointer'>
-          <Image 
-            src='https://links.papareact.com/ocw'
-            layout='fill'
-            objectFit='contain'
-          />
-        </div>
-
-        <div onClick={() => router.push('/')} className='relative w-10 lg:hidden flex-shrink-0 cursor-pointer'>
-          <Image 
-            src='https://links.papareact.com/jjm'
-            layout='fill'
-            objectFit='contain'
-          />
+      <div className='flex justify-between max-w-6xl mx-5 lg:mx-auto py-5'>
+        <div onClick={() => router.push('/')} className='relative w-10 flex-shrink-0 cursor-pointer'>
+          <h1 className='font-medium font-yesteryear text-3xl'>Glammo</h1>
         </div>
 
         {/* <div className='max-w-xm'>
